@@ -4896,6 +4896,7 @@ nobility_fra = {
 	diplomatic_points_modifier = -0.1
 	global_pop_consciousness_modifier = 0.55
 	global_pop_militancy_modifier = 0.55
+	icon = 1
 }
 
 
@@ -5063,7 +5064,7 @@ growth_of_shiraz = {
 	icon = 11
 }
 
-#Wales
+
 the_slate_empire = {
 	min_tariff = 0.2
 	tariff_efficiency_modifier = 0.1
@@ -5078,58 +5079,6 @@ Anglo_Welsh_Trade_Agreement = {
 	import_cost = -.05
 	non_accepted_pop_militancy_modifier = -0.01
 	icon = 9
-}
-
-Padarn_Railway = {
-	population_growth = 0.001
-	local_RGO_output = 0.05
-	immigrant_attract = 0.01
-	icon = 13
-}
-	
-Talyllyn_And_Ffestiniog_Railways = {
-	population_growth = 0.001
-	local_RGO_output = 0.05
-	immigrant_attract = 0.05
-	local_factory_output = 0.05
-	icon = 13
-}
-	
-Trevithick_&_Sons_Boiler_Works = {
-	immigrant_attract = 0.05
-	local_factory_output = 0.05
-	local_repair = 0.15
-	local_ship_build = -0.15
-	population_growth = 0.001
-	icon = 13
-}
-
-Welsh_Coaling_Port = {
-	immigrant_attract = 0.03
-	local_repair = 0.10
-	assimilation_rate = 0.15
-	icon = 9
-}
-	
-coaling_port_tolls = {
-	prestige = 0
-	icon = 1
-}
-
-welsh_mineral_railway = {
-	immigrant_attract = 0.05
-	local_RGO_output = 0.05
-	local_RGO_throughput = 0.1
-	population_growth = 0.0011
-	local_factory_throughput = 0.05
-	icon = 13
-}
-
-expand_scilly = { 
-	immigrant_attract = 0.02
-	assimilation_rate = 0.2
-	local_artisan_output = 0.20
-	population_growth = 0.001
 }
 
 lost_crusade = {
@@ -5236,7 +5185,7 @@ german_cape_merchants = {
 ## ToL China ##
 
 southern_devastation = {
-	global_population_growth = -0.004
+	global_population_growth = -0.04
 	war_exhaustion = 0.0005
 	non_accepted_pop_consciousness_modifier = 0.005
 	prestige = -0.1
