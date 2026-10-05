@@ -1,0 +1,8 @@
+name = "Throne of Lorraine"
+path = "mod/TOL"
+user_dir = "TOL"
+replace_path = "history/provinces"
+replace_path = "events"
+replace_path = "decisions"
+replace_path = "gfx/flags"
+replace_path = "music"

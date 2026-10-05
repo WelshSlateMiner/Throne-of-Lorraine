@@ -1,0 +1,55 @@
+TEX = { truce_until = 1839.1.1 }
+FRA = {value = -80}
+
+AKI = {value = -100}
+
+leader = {
+	name = "Levi De Jong"
+	type = land
+	date="1836.1.1"
+	personality = cautious
+	background = school_of_defense
+}
+
+leader = {
+	name = "David Van Dijk"
+	type = sea
+	date="1836.1.1"
+	personality = audacious
+	background = nationalist
+}
+
+
+army = {
+	name = "Veldleuwer Leger"
+	location = 145
+	regiment = {
+		name= "Erste Infanterie Divisie"
+		type = infantry
+		home = 163
+	}
+
+	regiment = {
+		name= "Tweede Infanterie Divisie"
+		type = infantry
+		home = 166
+	}
+	
+	regiment = {
+		name= "Derde Infanterie Divisie"
+		type = infantry
+		home = 150
+	}
+	regiment = {
+		name= "Vierde Infanterie Divisie"
+		type = infantry
+		home = 146
+	}
+	regiment = {
+		name = "Vijfde Infanterie Divisie"
+		type = infantry
+		home = 146
+	}
+	
+}
+

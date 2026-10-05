@@ -1,0 +1,36 @@
+#Reunion (98000)
+#Ruled by France 1836
+#Reunion (98000/24500 POPS)
+2126 = {
+
+	clergymen = {
+		culture = malagasy
+		religion = animist
+		size = 125
+	}
+
+	artisans = {
+		culture = malagasy
+		religion = animist
+		size = 850
+	}
+
+	soldiers = {
+		culture = malagasy
+		religion = animist
+		size = 200
+	}
+
+	farmers = {
+		culture = malagasy
+		religion = animist
+		size = 1825
+	}
+
+	slaves = {
+		culture = malagasy
+		religion = animist
+		size = 14000
+	}
+
+}

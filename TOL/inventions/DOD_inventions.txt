@@ -1,0 +1,12 @@
+methyl_isoprene = {
+	limit = { synthetic_polymers = 1 }
+	news = no
+	chance = {
+		base = 6
+	}
+	effect = {
+		factory_goods_output = {
+			rubber = 0.1
+		} 
+	}
+}

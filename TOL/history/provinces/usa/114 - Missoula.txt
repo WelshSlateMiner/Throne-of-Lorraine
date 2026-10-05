@@ -1,0 +1,5 @@
+add_core = HAD  
+trade_goods = cattle
+life_rating = 20
+
+	

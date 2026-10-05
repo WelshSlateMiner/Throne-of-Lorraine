@@ -1,0 +1,209 @@
+political_decisions = {
+
+	integrate_gepidia = {
+		picture = banatia_map
+		potential = {
+			tag = HUN
+			has_global_flag = banates_unified
+			NOT = { has_country_flag = end_the_banate }
+		}
+		allow = {
+			year = 1846
+			GEP = {
+				exists = yes
+				war = no
+				vassal_of = HUN
+			}
+		}
+		effect = {
+			set_country_flag = end_the_banate
+			badboy = 3
+			HUN = {
+				release_vassal = GEP
+			}
+			casus_belli = {
+				target = GEP
+				type = conquest_any
+				months = 60
+			}
+			war = {
+				target = GEP
+				attacker_goal = { casus_belli = conquest_any }
+				defender_goal = { casus_belli = acquire_all_cores  }
+				call_ally = no
+			}
+			GEP = { country_event = 25000017 }
+		}
+		ai_will_do = {
+			factor = 1 
+		}
+	}
+	
+	down_the_danube = {
+		picture = form_the_rcmp
+		potential = {
+			OR = {
+				tag = HUN
+				tag = PHC
+			}
+			NOT = { has_country_flag = down_the_danube }
+		}
+		allow = {
+			exists = yes
+			NOT = { is_vassal = yes }
+			war_policy = jingoism
+			owns = 653
+			owns = 792
+		}
+		effect = {
+			set_country_flag = down_the_danube
+			WAL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			MOL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			badboy = 5
+		}
+		ai_will_do = {
+			factor = 1 
+		}
+	}
+	
+	croatian_union = {
+		picture = greater_croatia_map
+		potential = {
+			OR = {
+				tag = HUN
+				tag = PHC
+			}
+			NOT = { has_country_flag = cro_union }
+			NOT = { exists = CRO }
+			NOT = { exists = YUG }
+		}
+
+		allow = {
+		state_n_government = 1	
+		CRO = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
+				}
+			}
+		BUL = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
+				}
+			}
+		SER = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+							war = no
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			prestige = 25
+			set_country_flag = cro_union
+			CRO = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			SER = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			BUL = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			
+			SLO = {
+				all_core = {
+					add_core = THIS
+				}
+			}
+			add_accepted_culture = serb
+			add_accepted_culture = slovene
+			add_accepted_culture = bulgarian
+			add_accepted_culture = croatian
+			
+			any_pop = {
+				limit = { has_pop_culture = romanian }
+				consciousness = 5
+				militancy = 5
+			}
+			
+			any_pop = {
+				limit = { has_pop_culture = slovak }
+				consciousness = 5
+				militancy = 5
+			}
+			
+			any_pop = {
+				limit = { has_pop_culture = south_german }
+				consciousness = 5
+				militancy = 5
+			}
+			
+			any_pop = {
+				limit = { has_pop_culture = croatian }
+				consciousness = -5
+				militancy = -5
+			}
+			
+		}
+	}
+
+	claim_galicia_hun = {
+		picture = unite_with_poland
+		potential = {
+			tag = HUN
+			NOT = { has_country_flag = galicia_claimed }
+			has_country_flag = down_the_danube
+		}
+		allow = {
+			exists = yes
+			NOT = { is_vassal = yes }
+			war_policy = jingoism
+		}
+		effect = {
+			set_country_flag = galicia_claimed
+			AUS_702 = { add_core = THIS }
+			AUS_662 = { add_core = THIS }
+			RUS_715 = { add_core = THIS }
+			badboy = 5
+		}
+		ai_will_do = {
+			factor = 1 
+		}
+	}
+		
+}

@@ -1,0 +1,6 @@
+owner = SGR
+controller = SGR
+add_core = SGR
+trade_goods = coffee
+terrain = hills
+life_rating = 15

@@ -1,0 +1,7 @@
+owner = SGR
+controller = SGR
+add_core = SGR
+trade_goods = tobacco
+life_rating = 35
+terrain = dunchaluim
+naval_base = 1

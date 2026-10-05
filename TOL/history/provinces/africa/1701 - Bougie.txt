@@ -1,0 +1,9 @@
+owner = TRI
+controller = TRI
+add_core = TRI
+add_core = TUN
+add_core = ALD
+add_core = MGH
+trade_goods = cotton
+life_rating = 35
+colonial = 2

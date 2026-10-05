@@ -1,0 +1,232 @@
+#Uruguay Region (200000)
+#Under rule of Uruguay 1836
+#Montevideo (112000/28000 POPS)
+2344 = {
+	aristocrats = {
+		culture = francorientale
+		religion = catholic
+		size = 575
+	}
+
+	bureaucrats = {
+		culture = francorientale
+		religion = catholic
+		size = 100
+	}
+
+	officers = {
+		culture = francorientale
+		religion = catholic
+		size = 50
+		militancy = 9
+	}
+
+	clergymen = {
+		culture = francorientale
+		religion = catholic
+		size = 250
+	}
+
+	artisans = {
+		culture = francorientale
+		religion = catholic
+		size = 980
+	}
+	
+	artisans = {
+		culture = occidentale
+		religion = reformed #hugenott
+		size = 350
+	}
+
+	soldiers = {
+		culture = francorientale
+		religion = catholic
+		size = 5000
+	}
+
+	farmers = {
+		culture = francorientale
+		religion = catholic
+		size = 18095
+	}
+	
+	farmers = {
+		culture = occidentale
+		religion = reformed #hugenott
+		size = 7560
+	}
+
+	slaves = {
+		culture = afro_french
+		religion = catholic
+		size = 9320
+	}
+}
+#Paysandu (36000/9000 POPS)
+2345 = {
+	aristocrats = {
+		culture = francorientale
+		religion = catholic
+		size = 200
+	}
+
+	bureaucrats = {
+		culture = francorientale
+		religion = catholic
+		size = 20
+	}
+
+	clergymen = {
+		culture = francorientale
+		religion = catholic
+		size = 75
+	}
+
+	artisans = {
+		culture = francorientale
+		religion = catholic
+		size = 450
+	}
+
+	soldiers = {
+		culture = francorientale
+		religion = catholic
+		size = 1000
+	}
+
+	soldiers = {
+		culture = francorientale
+		religion = catholic
+		size = 1500
+	}
+
+	farmers = {
+		culture = francorientale
+		religion = catholic
+		size = 9275
+	}
+	
+	slaves = {
+		culture = afro_french
+		religion = catholic
+		size = 4700
+	}
+}
+#Tacumba (12000/3000 POPS)
+2346 = {
+	artisans = {
+		culture = francorientale
+		religion = catholic
+		size = 150
+	}
+
+	soldiers = {
+		culture = francorientale
+		religion = catholic
+		size = 100
+	}
+
+	farmers = {
+		culture = francorientale
+		religion = catholic
+		size = 7300
+	}
+
+	clergymen = {
+		culture = francorientale
+		religion = catholic
+		size = 130
+	}
+	
+	slaves = {
+		culture = afro_french
+		religion = catholic
+		size = 4350
+	}
+}
+#Melo (40000/10000 POPS)
+2347 = {
+	aristocrats = {
+		culture = francorientale
+		religion = catholic
+		size = 150
+	}
+
+	bureaucrats = {
+		culture = francorientale
+		religion = catholic
+		size = 10
+	}
+
+	clergymen = {
+		culture = francorientale
+		religion = catholic
+		size = 100
+	}
+
+	artisans = {
+		culture = francorientale
+		religion = catholic
+		size = 500
+	}
+
+	soldiers = {
+		culture = francorientale
+		religion = catholic
+		size = 430
+	}
+
+	farmers = {
+		culture = francorientale
+		religion = catholic
+		size = 9450
+	}
+	
+	slaves = {
+		culture = afro_french
+		religion = catholic
+		size = 3250
+	}
+
+}
+
+#Archambeau
+3609 = {
+	aristocrats = {
+		culture = francorientale
+		religion = catholic
+		size = 170
+	}
+
+	clergymen = {
+		culture = francorientale
+		religion = catholic
+		size = 120
+	}
+
+	artisans = {
+		culture = francorientale
+		religion = catholic
+		size = 230
+	}
+
+	soldiers = {
+		culture = francorientale
+		religion = catholic
+		size = 650
+	}
+
+	farmers = {
+		culture = francorientale
+		religion = catholic
+		size = 12670
+	}
+	
+	slaves = {
+		culture = afro_french
+		religion = catholic
+		size = 18790
+	}
+
+}

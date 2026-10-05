@@ -1,0 +1,226 @@
+#relations deleted
+
+TEX = {
+	value = -100	
+}
+FRA = { value = -100 }
+RUS = { value = 25 }
+PIR = {
+	value = -50
+}
+CHK = {
+	value = -50	 #relation
+	level = 0		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+SIA = {
+	value = -100	 #relation
+	level = 0		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+CAM = {
+	value = -50	 #relation
+	level = 0		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+TKG = {
+	value = 0
+	level = 3
+	influence_value = 25
+}
+
+MOR = {
+	value = 0
+	level = 0
+	influence_value = 0
+}
+
+DEN = {
+	value = 200
+}
+
+QNG ={
+	value = -10
+	level = 0
+	influence_value = 0
+}
+
+leader = {
+	name = "Reinhard von Richthofen"
+	date = 1836.1.1
+	type = land
+	personality = steadfast
+	background = school_of_firepower
+	prestige = 0.3
+}
+
+leader = {
+	name = "Stefan von Blumenthal"
+	date = 1836.1.1
+	type = land
+	personality = intuitive
+	background = school_of_offense
+	prestige = 0.1
+}
+
+leader = {
+	name = "Theodor von Hohenzollern"
+	date = 1836.1.1
+	type = land
+	personality = meticulous
+	background = toady
+	prestige = 0.1
+}
+
+leader = {
+	name = "Maximillian von Bulow"
+	date = 1828.1.1
+	type = land
+	personality = soldierly
+	background = drillmaster
+	prestige = 0.1
+}
+
+leader = {
+	name = "Peter von Reuter"
+	date = 1812.1.1
+	type = land
+	personality = heroic
+	background = engineer
+	prestige = 0.3
+}
+
+leader = {
+	name = "Wolfgang Groener"
+	date = 1810.1.1
+	type = sea
+	personality = skilled
+	background = elderly
+	prestige = 0.2
+}
+
+leader = {
+	name = "Ruprecht Hoffmann"
+	date = 1836.1.1
+	type = sea
+	personality = efficient
+	background = school_of_offense
+	prestige = 0.1
+}
+
+leader = {
+	name = "Pascal Droste"
+	date = 1830.1.1
+	type = sea
+	personality = tactful
+	background = diplomat
+	prestige = 0.1
+}
+
+leader = {
+	name = "Joachim Dreyer"
+	date = 1836.1.1
+	type = sea
+	personality = openminded
+	background = war_college
+	prestige = 0.1
+}
+
+army = {
+	name = "Kontinental Armee"
+	location = 65
+	
+	regiment = {
+		name= "1. Footsoldoten brigade"
+		type = infantry
+		home = 54
+	}
+	regiment = {
+		name= "2. Footsoldoten brigade"
+		type = infantry
+		home = 180
+	}
+	regiment = {
+		name= "3. Footsoldoten brigade"
+		type = infantry
+		home = 174
+	}
+	regiment = {
+		name= "4. Footsoldoten brigade"
+		type = infantry
+		home = 249
+	}
+	regiment = {
+		name= "1. Dragoner brigade"
+		type = dragoon
+		home = 240
+	}
+	regiment = {
+		name= "2. Dragoner brigade"
+		type = dragoon
+		home = 236
+	}
+	regiment = {
+		name= "1. Kanoonen brigade"
+		type = artillery
+		home = 249
+	}
+	regiment = {
+		name= "2. Kanoonen brigade"
+		type = artillery
+		home = 56
+	}
+}
+
+navy = {
+	name = "De Groot Liga Kjrichsflott"
+	location = 74
+	ship = {
+		name= "Adler von Ottoborg"
+		type = manowar
+	}
+	ship = {
+		name= "Nie Hamborg"
+		type = frigate
+	}
+	ship = {
+		name= "Nie Pommern"
+		type = frigate
+	}
+	ship = {
+		name= "Karl"
+		type = frigate
+	}
+	ship = {
+		name= "Oolt Jut"
+		type = frigate
+	}
+	ship = {
+		name= "Seeland"
+		type = frigate
+	}
+	ship = {
+		name= "Holsteen"
+		type = frigate
+	}
+	ship = {
+		name= "Ingwer"
+		type = frigate
+	}
+	ship = {
+		name= "1. Transportflottille"
+		type = steam_transport
+	}
+	ship = {
+		name= "2. Transportflottille"
+		type = steam_transport
+	}
+	ship = {
+		name= "3. Transportflottille"
+		type = steam_transport
+	}
+}
+

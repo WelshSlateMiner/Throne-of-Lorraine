@@ -1,2 +1,0 @@
-life_rating = 25
-trade_goods = wool

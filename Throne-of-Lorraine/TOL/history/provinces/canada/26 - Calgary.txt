@@ -1,7 +1,0 @@
-owner = VEL
-controller = VEL
-add_core = VEL
-add_core = MTC
-trade_goods = timber
-terrain = plains
-life_rating = 35

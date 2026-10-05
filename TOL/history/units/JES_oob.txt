@@ -1,0 +1,100 @@
+FRA = {
+	value = 50
+}
+PEU = {
+	value = -100
+}
+SGR = {
+	value = -100
+}
+USA = {
+	value = 25
+}
+TEX = {
+	value = -25
+}
+GEN = {
+	value = -75
+}
+PIR = {
+	value = -100
+}
+PAP = {
+	value = 50
+}
+
+army = {
+	name = "Guardia Jesuita"
+	location = 2264
+	regiment = {
+		name= "1. Guardia"
+		type = guard
+		home = 2247
+	}
+
+	regiment = {
+		name= "2. Guardia"
+		type = guard
+		home = 2252
+	}
+
+	regiment = {
+		name= "3. Guardia"
+		type = guard
+		home = 2254
+	}
+	
+	regiment = {
+		name= "4. Guardia"
+		type = guard
+		home = 2255
+	}
+	regiment = {
+		name= "5. Guardia"
+		type = guard
+		home = 2256
+	}
+		regiment = {
+		name= "6. Guardia"
+		type = guard
+		home = 2264
+	}
+		regiment = {
+		name= "7. Guardia"
+		type = guard
+		home = 2267
+	}
+}
+
+leader = {
+   name = "Diego Martínez"
+   type = land
+   date = 1836.1.1
+   background = aristocrat
+   personality = implacable
+}
+
+navy = {
+	name = "Marina Dorada"
+	location = 2276
+	ship = {
+		name= "San Loyola"
+		type = frigate
+	}
+	ship = {
+		name= "San Xavier"
+		type = frigate
+	}
+	ship = {
+		name= "1. Vaporera"
+		type = steam_transport
+	}
+	ship = {
+		name= "2. Vaporera"
+		type = steam_transport
+	}
+	ship = {
+		name= "3. Vaporera"
+		type = steam_transport
+	}
+}

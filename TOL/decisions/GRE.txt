@@ -1,0 +1,245 @@
+political_decisions = {
+
+	unite_with_greece = {
+		picture = unite_with_greece
+		potential = {
+			primary_culture = greek
+			exists = GRE
+			NOT = { has_country_flag = unite_with_greece }
+			OR = {
+				ai = no
+				is_vassal = no
+			}
+			NOT = { tag = GRE tag = BYZ tag = RME tag = PAA }
+		}
+
+		allow = {
+			war = no
+			is_vassal = no
+			OR = {
+				part_of_sphere = no
+				sphere_owner = { is_sphere_leader_of = GRE }
+			}
+			GRE = {
+				war = no
+				is_vassal = no
+			}
+			NOT = { has_global_flag = sw_set }
+		}
+
+		effect = {
+			set_country_flag = unite_with_greece
+			random_country = {
+				limit = {
+					tag = GRE
+					ai = yes
+					THIS = { ai = yes }
+				}
+				THIS = {
+					remove_accepted_culture = north_italian
+					remove_accepted_culture = british
+				}
+				inherit = THIS
+			}
+			random_country = {
+				limit = {
+					tag = GRE
+					ai = yes
+					THIS = { ai = no }
+				}
+				any_owned = { secede_province = THIS }
+				THIS = {
+					remove_accepted_culture = turkish
+					remove_accepted_culture = north_italian
+					remove_accepted_culture = british
+					random_owned = {
+						limit = { province_id = 834 }
+						owner = { capital = 834 }
+					}
+					change_tag = GRE
+				}
+			}
+			random_country = {
+				limit = {
+					tag = GRE
+					ai = no
+				}
+				country_event = 60130
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	grecofication = {
+		picture = megali_idea
+		potential = {
+			primary_culture = greek
+			OR = {
+				###MYSIA###
+				AND = { owns = 861 NOT = { has_country_flag = grecofication_uskudar } }
+				AND = { owns = 862 NOT = { has_country_flag = grecofication_nicomedia } }
+				AND = { owns = 863 NOT = { has_country_flag = grecofication_prusa } }
+				AND = { owns = 864 NOT = { has_country_flag = grecofication_palaeokastron } }
+				AND = { owns = 865 NOT = { has_country_flag = grecofication_dardanelles } }
+				AND = { owns = 3301 NOT = { has_country_flag = grecofication_mudania } }
+				###IONIA###
+				AND = { owns = 867 NOT = { has_country_flag = grecofication_kotyaion } }
+				AND = { owns = 869 NOT = { has_country_flag = grecofication_izmir } }
+				AND = { owns = 871 NOT = { has_country_flag = grecofication_hierapolis } }
+				AND = { owns = 872 NOT = { has_country_flag = grecofication_fethiye } }
+				###ANATOLIA###
+				AND = { owns = 883 NOT = { has_country_flag = grecofication_paphlagonia } }
+				AND = { owns = 882 NOT = { has_country_flag = grecofication_pontus } }
+				AND = { owns = 876 NOT = { has_country_flag = grecofication_galatia } }
+				AND = { owns = 873 NOT = { has_country_flag = grecofication_lycaonia } }
+				AND = { owns = 3520 NOT = { has_country_flag = grecofication_cappadocia } }
+				AND = { owns = 894 NOT = { has_country_flag = grecofication_cilicia } }
+			}
+		}
+
+		allow = {
+			war = no
+		}
+
+		effect = {
+		
+			###MYSIA###
+			
+			random_owned = {
+				limit = { province_id = 861 }
+				861 = {
+					change_province_name = "Skoutarion"
+					state_scope = { change_region_name = "Mysía" }
+				}
+				owner = { set_country_flag = grecofication_uskudar }
+			}
+			random_owned = {
+				limit = { province_id = 862 }
+				862 = { change_province_name = "Nikomídeia" }
+				owner = { set_country_flag = grecofication_nicomedia }
+			}
+			random_owned = {
+				limit = { province_id = 863 }
+				863 = { change_province_name = "Proúsa" }
+				owner = { set_country_flag = grecofication_prusa }
+			}
+			random_owned = {
+				limit = { province_id = 864 }
+				864 = { change_province_name = "Palaiókastron" }
+				owner = { set_country_flag = grecofication_palaeokastron }
+			}
+			random_owned = {
+				limit = { province_id = 865 }
+				865 = { change_province_name = "Dardanéllia" }
+				owner = { set_country_flag = grecofication_dardanelles }
+			}
+			random_owned = {
+				limit = { province_id = 3301 }
+				3301 = { change_province_name = "Moudaniá" }
+				owner = { set_country_flag = grecofication_mudania }
+			}
+			
+			###IONIA###
+			
+			random_owned = {
+				limit = { province_id = 867 }
+				867 = { change_province_name = "Mákri" }
+				owner = { set_country_flag = grecofication_kotyaion }
+			}
+			random_owned = {
+				limit = { province_id = 869 }
+				869 = {
+					change_province_name = "Smýrni"
+					state_scope = { change_region_name = "Ionía" }
+				}
+				owner = { set_country_flag = grecofication_izmir }
+			}
+			random_owned = {
+				limit = { province_id = 871 }
+				871 = { change_province_name = "Aidínio" }
+				owner = { set_country_flag = grecofication_hierapolis }
+			}
+			random_owned = {
+				limit = { province_id = 872 }
+				872 = { change_province_name = "Sókia" }
+				owner = { set_country_flag = grecofication_fethiye }
+			}
+			
+			###ANATOLIA###
+			
+			random_owned = {
+				limit = { province_id = 883 }
+				883 = { 
+					change_province_name = "Sinópi"
+					state_scope = { change_region_name = "Paflagonía"  }
+				}
+				880 = { change_province_name = "Kastamoní" }
+				881 = { change_province_name = "Vithýnion" }
+				owner = { set_country_flag = grecofication_paphlagonia }
+			}
+			
+			random_owned = {
+				limit = { province_id = 882 }
+				882 = { 
+					change_province_name = "Trapezoúntos"
+					state_scope = { change_region_name = "Póntos"  }
+				}
+				884 = { change_province_name = "Kerasoúnta" }
+				3537 = { change_province_name = "Rizoúnta" }
+				owner = { set_country_flag = grecofication_pontus }
+			}
+			
+			random_owned = {
+				limit = { province_id = 876 }
+				876 = { 
+					change_province_name = "Ánkyra"
+					state_scope = { change_region_name = "Galatía"  }
+				}
+				868 = { change_province_name = "Dorýlaion" }
+				870 = { change_province_name = "Kotýaion" }
+				owner = { set_country_flag = grecofication_galatia }
+			}
+			
+			random_owned = {
+				limit = { province_id = 873 }
+				873 = { 
+					change_province_name = "Ikónion"
+					state_scope = { change_region_name = "Lykaonía"  }
+				}
+				866 = { change_province_name = "Nikópoli" }
+				874 = { change_province_name = "Váris" }
+				875 = { change_province_name = "Attáleia" }
+				owner = { set_country_flag = grecofication_lycaonia }
+			}
+			
+			random_owned = {
+				limit = { province_id = 3520 }
+				3520 = { 
+					change_province_name = "Kaisáreia"
+					state_scope = { change_region_name = "Kappadokía"  }
+				}
+				877 = { change_province_name = "Amáseia" }
+				878 = { change_province_name = "Evdokiáda" }
+				879 = { change_province_name = "Sevásteia" }
+				owner = { set_country_flag = grecofication_cappadocia }
+			}
+			
+			random_owned = {
+				limit = { province_id = 894 }
+				894 = { 
+					change_province_name = "Ádana"
+					state_scope = { change_region_name = "Kilikía"  }
+				}
+				895 = { change_province_name = "Seléfkeia" }
+				896 = { change_province_name = "Alexandrétta" }
+				899 = { change_province_name = "Plastentía" }
+				3345 = { change_province_name = "Mersína" }
+				3362 = { change_province_name = "Sis" }
+				owner = { set_country_flag = grecofication_cilicia }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

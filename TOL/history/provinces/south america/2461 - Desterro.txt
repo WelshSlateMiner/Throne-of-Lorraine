@@ -1,0 +1,7 @@
+owner = FNC
+controller = FNC
+add_core = FNC
+add_core = ARC
+trade_goods = grain
+terrain = jungle_farmland
+life_rating = 35

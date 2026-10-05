@@ -1,0 +1,84 @@
+COC = {
+	value = -30
+	truce_until = 1844.1.1
+}
+
+army = {
+	name = "Exercit de la Republica"
+	location = 2348
+	regiment = {
+		name= "Gardas Carpentier"
+		type = infantry
+		home = 2348
+	}
+
+	regiment = {
+		name= "Los omes de Calvin"
+		type = infantry
+		home = 2348
+	}
+	
+	regiment = {
+		name= "Gardas d'estepa"
+		type = infantry
+		home = 2356
+	}
+
+	regiment = {
+		name= "Gardas d'Argent"
+		type = hussar
+		home = 2360
+	}
+
+}
+
+navy = {
+	name = "Marina Aquitania"
+	location = 2348
+	ship = {
+		name = "Epervier"
+		type = frigate
+	}
+	ship = {
+		name = "Pallas"
+		type = frigate
+	}
+	ship = {
+		name = "Junon"
+		type = frigate
+	}
+	ship = {
+		name = "Flore"
+		type = frigate
+	}
+	ship = {
+		name = "Republican"
+		type = manowar
+	}
+	ship = {
+		name = "1ra flotilha de transport"
+		type = clipper_transport
+	}
+	ship = {
+		name = "2a flotilha de transport"
+		type = clipper_transport
+	}
+}
+
+leader = {
+	name = "Jan Dardier"
+	picture = european_general_34
+	date = 1836.1.1
+	type = land
+	personality = audacious
+	background = amateur
+}
+
+leader = {
+	name = "Roman Pujol"
+	picture = southamerican_admiral_3
+	date = 1836.1.1
+	type = sea
+	personality = disciplined
+	background = old_school
+}

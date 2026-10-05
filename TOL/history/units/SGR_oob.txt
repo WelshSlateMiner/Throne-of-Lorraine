@@ -1,0 +1,116 @@
+SCO = { 
+	value = 40 
+}
+
+CLM = {
+	value = 150
+}
+
+JES = {
+	value = -100
+}
+
+PIR = {
+	value = -50
+}
+
+FRA = {
+	value = -50
+}
+
+army = {
+	name = "Mordredish Airmed Forces"
+	location = 2436
+	
+	regiment = {
+		name= "Calumburgh Guards"
+		type = infantry
+		home = 2436
+	}
+	regiment = {
+		name= "Gold Mountain Rifles"
+		type = infantry
+		home = 3443
+	}
+	regiment = {
+		name= "Northeast Steppe Sentinels"
+		type = infantry
+		home = 2436
+	}
+	regiment = {
+		name= "Saint Andrew's Regiment"
+		type = infantry
+		home = 2426
+	}
+	regiment = {
+		name= "New Scotland Pioneers"
+		type = infantry
+		home = 2441
+	}
+	regiment = {
+		name= "Sons of the Forest"
+		type = infantry
+		home = 3446
+	}
+
+}
+
+leader = {
+	name = "Jean Alphonse"
+	picture = southamerican_general_2
+	date = 1830.1.1
+	type = land
+	personality = brash
+	background = school_of_the_bayonet
+	prestige = 0.1
+}
+
+leader = {
+	name = "Lachlan Morrison"
+	picture = european_general_55
+	date = 1836.1.1
+	type = land
+	personality = gutsy
+	background = war_college
+	prestige = 0.1
+}
+
+leader = {
+	name = "Rory Young"
+	picture = european_admiral_0
+	date = 1830.1.1
+	type = sea
+	personality = tactful
+	background = nationalist
+}
+
+navy = {
+	name = "Mordredish Ryal Navy"
+	location = 2436
+
+	ship = {
+		name = "Calumburgh"
+		type = frigate
+	}
+	ship = {
+		name = "New Scotland"
+		type = frigate
+	}
+	ship = {
+		name = "Leviathan"
+		type = frigate
+	}
+	ship = {
+		name = "Ryal Stewart"
+		type = frigate
+	}
+	ship = {
+		name = "1. transport flotilla"
+		type = clipper_transport
+	}
+	ship = {
+		name = "2. transport flotilla"
+		type = clipper_transport
+	}
+
+}

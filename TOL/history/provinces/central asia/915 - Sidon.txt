@@ -1,0 +1,8 @@
+owner = VEN
+controller = VEN
+add_core = TUR
+add_core = SYR
+add_core = PLS
+trade_goods = coal
+life_rating = 35
+terrain = dryhills

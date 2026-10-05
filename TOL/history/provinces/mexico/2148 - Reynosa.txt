@@ -1,0 +1,4 @@
+add_core = NAV	
+trade_goods = coal
+life_rating = 30
+colonial = 2

@@ -1,0 +1,324 @@
+political_decisions = {
+	stewart_wildlife_preserve = {
+		picture = kruger_national_park
+
+		potential = {
+			OR = {
+				tag = NAL
+				tag = CLD
+			}
+			NOT = { has_global_flag = kruger_wildlife_preserve_formed }
+		}
+
+		allow = {
+			steam_turbine = 1
+			owns = 2050	#Tky-Gariep state minus the Suazi province
+			owns = 2114
+			owns = 2110
+			OR = {
+				is_greater_power = yes
+				year = 1926
+			}
+		}
+
+		effect = {
+			prestige = 20
+			treasury = -20000
+			set_global_flag = kruger_wildlife_preserve_formed
+			2050 = {
+				life_rating = 5
+				add_province_modifier = {
+					name = stewart_reserve
+					duration = 1750
+				}
+			}
+			2114 = {
+				life_rating = 5
+				add_province_modifier = {
+					name = stewart_reserve
+					duration = 1750
+				}
+			}
+			2110 = {
+				life_rating = 5
+				add_province_modifier = {
+					name = stewart_reserve
+					duration = 1750
+				}
+			}
+		}
+	}
+	
+	adopt_die_stem = {
+		picture = adopt_die_stem
+		potential = {
+			OR = {
+				tag = CLD
+				tag = VLK
+			}
+			NOT = {
+				has_country_flag = has_die_stem
+			}
+		}
+
+		allow = {
+			mass_culture_n_the_avant_garde = 1
+		}
+
+		effect = {
+			prestige = 5
+			set_country_flag = has_die_stem
+		}
+	}
+
+
+	create_south_africa = {
+		picture = form_south_africa
+		alert = no
+		potential = {
+			any_owned_province = { is_core = SAF }
+			SAF = { exists = no }
+			NOT = { tag = VLK }
+			NOT = { has_global_flag = south_africa_formed }
+			NOT = {
+				capital_scope = { continent = africa }
+				capital_scope = { continent = west_africa }
+				capital_scope = { continent = central_africa }
+				capital_scope = { continent = east_africa }
+				capital_scope = { continent = south_west_africa }
+			}
+			civilized = yes
+			revolution_n_counterrevolution = 1
+		}
+
+		allow = {
+			war = no
+			SAF = { all_core = {
+				OR = {
+					owned_by = THIS
+					owner = {
+							in_sphere = THIS
+							OR = {
+								is_vassal = no
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			set_global_flag = south_africa_formed
+			prestige = 20
+			any_country = {
+				limit = {
+					ai = yes
+					exists = yes
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				any_owned = { limit = { is_core = SAF }
+				secede_province = THIS
+				}
+			}
+			SAF = { set_country_flag = post_colonial_country neutrality = yes government = hms_government set_country_flag = new_world_nation }
+			release_vassal = SAF
+			create_alliance = SAF
+			diplomatic_influence = {
+				who = SAF
+				value = 400
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { year = 1905 }
+			}
+		}
+	}
+	
+	clearances_in_natal = {
+		picture = tea_production
+
+		potential = {
+			OR = {
+				owns = 2112
+				owns = 2113
+				owns = 3613
+			}
+			OR = {
+				2112 = { NOT = { has_province_modifier = plantation } }
+				3613 = { NOT = { has_province_modifier = plantation } }
+				2113 = { NOT = { has_province_modifier = plantation } }
+			}
+			civilized = yes
+			OR = {
+				tag = NAL
+				tag = CLD
+			}
+			NOT = { has_global_flag = natal_life_rating }
+		}
+
+		allow = {
+			war = no
+			compound_steam_engines = 1
+			money = 150000
+		}
+
+		effect = {
+			set_global_flag = natal_life_rating 
+			2112 = { add_province_modifier = { name = plantation duration = -1 } }
+			3613 = { add_province_modifier = { name = plantation duration = -1 } }
+			2113 = { add_province_modifier = { name = plantation duration = -1 } }
+			random_owned = {
+				2112 = { life_rating = 1 }
+				3613 = { life_rating = 1 }
+				2113 = { life_rating = 2 }
+			}
+			money = -150000
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	clearances_in_cuchulainn = {
+		picture = tea_production
+
+		potential = {
+			OR = {
+				owns = 2112
+				owns = 2113
+				owns = 3613
+			}
+			OR = {
+				2112 = { NOT = { has_province_modifier = plantation } }
+				3613 = { NOT = { has_province_modifier = plantation } }
+				2113 = { NOT = { has_province_modifier = plantation } }
+			}
+			civilized = yes
+			tag = HBR
+			NOT = { has_global_flag = natal_life_rating }
+		}
+
+		allow = {
+			war = no
+			compound_steam_engines = 1
+			money = 150000
+		}
+
+		effect = {
+			set_global_flag = natal_life_rating 
+			2112 = { add_province_modifier = { name = plantation duration = -1 } }
+			3613 = { add_province_modifier = { name = plantation duration = -1 } }
+			2113 = { add_province_modifier = { name = plantation duration = -1 } }
+			random_owned = {
+				2112 = { life_rating = 1 }
+				3613 = { life_rating = 1 }
+				2113 = { life_rating = 2 }
+			}
+			money = -150000
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+
+	move_capital = {
+		picture = map_africa
+		potential = {
+			tag = CLD
+			NOT = { has_country_flag = moved_capital_cld }
+		}
+
+		allow = {
+			war = no
+			money = 150000
+			2087 = { owned_by = THIS }
+			3593 = { owned_by = THIS }
+			3610 = { owned_by = THIS }
+		}
+
+		effect = {
+			set_country_flag = moved_capital_cld
+			country_event = 6013
+			money = -150000
+		}
+
+		ai_will_do = {
+				factor = 1
+		}
+	}
+	
+	OCN_move_capital = {
+		picture = map_africa
+		potential = {
+			tag = OCN
+			NOT = { has_country_flag = moved_capital_ocn }
+		}
+
+		allow = {
+			war = no
+			money = 150000
+			2087 = { owned_by = THIS }
+			3593 = { owned_by = THIS }
+			3610 = { owned_by = THIS }
+		}
+
+		effect = {
+			set_country_flag = moved_capital_ocn
+			country_event = 500518
+			money = -150000
+		}
+
+		ai_will_do = {
+				factor = 1
+		}
+	}
+
+	open_the_frontiers = {
+		picture = saf_frontier
+		potential = {
+			OR = {
+				tag = HBR
+				tag = CLD
+				tag = OCN
+			}
+			2106 = { owned_by = THIS }
+			3610 = { owned_by = THIS }
+			2105 = { owned_by = THIS }
+			2087 = { owned_by = THIS }
+			2098 = { owned_by = THIS }
+			2088 = { owned_by = THIS }
+			NOT = { has_country_flag = open_frontiers }
+		}
+
+		allow = {
+			money = 50000
+			invention = manifest_destiny
+			THIS = {
+				OR = {
+					is_greater_power = yes
+					is_secondary_power = yes
+				}
+			}
+		}
+
+		effect = {
+			money = -50000
+			set_country_flag = open_frontiers
+			THIS = {
+				add_country_modifier = {
+					name = opened_frontiers
+					duration = -1
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,6 @@
+add_core = AKI
+add_core = QUE
+add_core = ALQ  
+trade_goods = cattle
+life_rating = 20
+   

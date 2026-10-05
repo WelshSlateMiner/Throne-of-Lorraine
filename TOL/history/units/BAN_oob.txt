@@ -1,0 +1,42 @@
+
+HUN = {value = -50}
+
+army = {
+	name = "Sewernburger Landwehr"
+	location = 3621
+	regiment = {
+		name= "1.J‰gerbataillon"
+		type = infantry
+		home = 3621
+	}
+	regiment = {
+		name= "2.J‰gerbataillon"
+		type = infantry
+		home = 3621
+	}
+	regiment = {
+		name= "3.J‰gerbataillon"
+		type = infantry
+		home = 665
+	}
+	regiment = {
+		name = "4.J‰gerbataillon"
+		type = infantry
+		home = 666
+	}
+	regiment = {
+		name = "1.Fuﬂartillerie-Bataillon"
+		type = artillery
+		home = 3619
+	}
+}
+
+leader = {
+	name = "Franz Hartranft"
+	picture = european_general_37
+	type = land
+	date = 1836.1.1
+	personality = defiant
+	background = school_of_the_bayonet
+	prestige = 0.3
+}

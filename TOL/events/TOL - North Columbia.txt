@@ -1,0 +1,652 @@
+country_event = {
+	id = 100142
+	title = "EVTNAME443037"
+	desc = "EVTDESC443037"
+	picture = "convict_labor"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVT443036OPTA" #Everyone
+		political_reform = yes_slavery
+		
+		ruling_party_ideology = reactionary
+		government = colonial_company
+		any_pop = {
+			limit = {
+			OR = {
+				has_pop_culture = afro_french
+				has_pop_culture = afro_dutch
+				has_pop_culture = afro_italian
+				has_pop_culture = afro_caribbean
+				has_pop_culture = afro_scot
+				has_pop_culture = afro_german
+				has_pop_culture = kreol
+				}
+				type = farmers
+			}
+			}
+		any_pop = { 
+		limit = { 
+		type = farmers 
+		OR = {
+				has_pop_culture = afro_french
+				has_pop_culture = afro_dutch
+				has_pop_culture = afro_italian
+				has_pop_culture = afro_caribbean
+				has_pop_culture = afro_scot
+				has_pop_culture = kreol
+				has_pop_culture = afro_german
+				} 
+			} 
+			militancy = 9 consciousness = 9 pop_type = slaves
+		}
+	}
+}
+
+#Colonization of America
+country_event = {
+	id = 100156
+	title = "Colonization of the North"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = GKS
+		year = 1836
+		3461 = { empty = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_country_flag = getkoloniseerd_1
+		3453 = { add_core = THIS }
+		3461 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+
+country_event = {
+	id = 100157
+	title = "Colonization of the Valley"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = GKS
+		year = 1839
+		86 = { empty = yes }
+		has_country_flag = getkoloniseerd_1
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_country_flag = getkoloniseerd_2
+		USA_3453 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+country_event = {
+	id = 100158
+	title = "Colonization of the East"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = GKS
+		year = 1840
+		94 = { empty = yes }
+		has_country_flag = getkoloniseerd_2
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_country_flag = getkoloniseerd_3		
+		80 = { add_core = THIS }
+	    94 = { add_core = THIS }
+		3457 = { add_core = THIS }
+		82 = { add_core = THIS }
+		3463 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+country_event = {
+	id = 100159
+	title = "Colonization of the Mountains"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = GKS
+		year = 1842
+		91 = { empty = yes }
+		has_country_flag = getkoloniseerd_3
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_country_flag = getkoloniseerd_4			
+	    91 = { add_core = THIS }
+		93 = { add_core = THIS }
+		MEX_94 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+country_event = {
+	id = 100160
+	title = "Colonization of Guteweiden"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = GKS
+		year = 1843
+		3456 = { empty = yes }
+		has_country_flag = getkoloniseerd_4
+		has_global_flag = VEL_Border_Victory
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_country_flag = getkoloniseerd_5
+		100 = { add_core = THIS }
+		101 = { add_core = THIS }
+		102 = { add_core = THIS }
+		2148 = { add_core = THIS }
+		3456 = { add_core = THIS }
+		3460 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+country_event = {
+	id = 100161
+	title = "Colonization of Dood-Ruitersberg"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = GKS
+		year = 1844
+		97 = { empty = yes }
+		has_country_flag = getkoloniseerd_4
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_global_flag = GKS_colonization_done
+		97 = { add_core = THIS }
+		99 = { add_core = THIS }
+		108 = { add_core = THIS }
+	    110 = { add_core = THIS }
+		111 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+###VELDLEUWER###
+
+country_event = {
+	id = 100162
+	title = "Colonization of the Plains"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = VEL
+		year = 1836
+		124 = { empty = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_country_flag = gotkoloniseerd_1		
+	    112 = { add_core = THIS }
+		122 = { add_core = THIS }
+		124 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+country_event = {
+	id = 100163
+	title = "Colonization of the Western Borderlands"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = VEL
+		year = 1838
+		3468 = { empty = yes }
+		has_country_flag = gotkoloniseerd_1
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_country_flag = gotkoloniseerd_2		
+	    3468 = { add_core = THIS }
+		107 = { add_core = THIS }
+		109 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+country_event = {
+	id = 100164
+	title = "Colonization of the Northeastern Borderlands"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = VEL
+		year = 1841
+		159 = { empty = yes }
+		has_country_flag = gotkoloniseerd_2
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_country_flag = gotkoloniseerd_3	
+		120 = { add_core = THIS }
+		156 = { add_core = THIS }
+	    159 = { add_core = THIS }
+		162 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+country_event = {
+	id = 100165
+	title = "Colonization of the Northern Borderlands"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = VEL
+		year = 1842
+		117 = { empty = yes }
+		has_country_flag = gotkoloniseerd_3
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_country_flag = gotkoloniseerd_4	
+	    117 = { add_core = THIS }
+		119 = { add_core = THIS }
+		121 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+country_event = {
+	id = 100166
+	title = "Colonization of the Northwestern Borderlands"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = VEL
+		year = 1843
+		116 = { empty = yes }
+		has_country_flag = gotkoloniseerd_4
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_global_flag = VEL_colonization_done
+	    113 = { add_core = THIS }
+		115 = { add_core = THIS }
+		116 = { add_core = THIS }
+		3467 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+###INGEMARIC LEAGUE###
+
+country_event = {
+	id = 100167
+	title = "Colonization of Western Borderlands"
+	desc = "KOLONISATION"
+	fire_only_once = yes
+	picture = "ingemard_colonists"
+
+	trigger = {
+		tag = AKI
+		year = 1837
+		51 = { empty = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Gold, Gott und Ruhm!"
+		prestige = 5
+		set_country_flag = kolonisation_1
+		51 = { secede_province = THIS }
+		2593 = { secede_province = THIS } 
+	}
+}
+
+country_event = {
+	id = 100168
+	title = "Colonization of Northern Coastlands"
+	desc = "KOLONISATION"
+	fire_only_once = yes
+	picture = "ingemard_colonists"
+
+	trigger = {
+		tag = AKI
+		year = 1839
+		2625 = { empty = yes }
+		has_country_flag = kolonisation_1
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Gold, Gott und Ruhm!"
+		prestige = 5
+		set_country_flag = kolonisation_2
+		76 = { secede_province = THIS }
+		2592 = { secede_province = THIS }
+		2625 = { secede_province = THIS } 
+	}
+}
+
+country_event = {
+	id = 100169
+	title = "Juhlwyk Expedition"
+	desc = "KOLONISATION"
+	fire_only_once = yes
+	picture = "ingemard_colonists"
+
+	trigger = {
+		tag = AKI
+		year = 1842
+		63 = { empty = yes }
+		has_country_flag = kolonisation_2
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Gold, Gott und Ruhm!"
+		prestige = 5
+		set_country_flag = kolonisation_3
+		9 = { secede_province = THIS }
+		59 = { secede_province = THIS }
+		63 = { secede_province = THIS }
+		2626 = { secede_province = THIS }
+		3475 = { secede_province = THIS } 
+	}
+}
+
+country_event = {
+	id = 100170
+	title = "Fischerinsel Expedition"
+	desc = "KOLONISATION"
+	fire_only_once = yes
+	picture = "ingemard_colonists"
+
+	trigger = {
+		tag = AKI
+		year = 1845
+		3485 = { empty = yes }
+		has_country_flag = kolonisation_3
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Gold, Gott und Ruhm!"
+		prestige = 5
+		set_global_flag = AKI_colonization_done
+		3485 = { secede_province = THIS }
+	}
+}
+
+country_event = {
+	id = 100171
+	title = "ottogrowth.T"
+	desc = "ottogrowth.D"
+	fire_only_once = yes
+	picture = "ottoborg_view"
+
+	trigger = {
+		tag = AKI
+		capital = 65
+		has_global_flag = ingemards_unified
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = "ottogrowth.A"
+		prestige = 10
+		years_of_research = 0.5
+		65 = { 
+			life_rating = 5
+			infrastructure = 3
+			trade_goods = precious_goods
+			add_province_modifier = { 
+				name = medium_baby_boom
+				duration = 3650
+			}
+		}
+	}
+}
+
+###FREILAND###
+
+country_event = {
+	id = 6900001
+	title = "Colonization of Guteweiden"
+	desc = "COLONIZATION"
+	fire_only_once = yes
+	picture = "arab_revolt"
+
+	trigger = {
+		tag = TEX
+		year = 1843
+		3456 = { empty = yes }
+		has_global_flag = TEX_Border_Victory
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = "Free Land!"
+		prestige = 5
+		set_country_flag = freie_guteweiden
+		100 = { add_core = THIS }
+		101 = { add_core = THIS }
+		102 = { add_core = THIS }
+		2148 = { add_core = THIS }
+		3456 = { add_core = THIS }
+		3460 = { add_core = THIS }
+		THIS = { all_core = { limit = { empty = yes } secede_province = THIS } }  	
+	}
+}
+
+# National unity event
+
+country_event = {
+
+	id = 6900002
+	
+	title = "VKS1.T"
+	desc = "VKS1.D"
+	picture = "german_rhine"
+	
+	trigger = {
+		tag = VKS
+		has_global_flag = VKS_Annnex_AKI
+		NOT = { has_global_flag = VKS_National_Unity }
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "VKS1.A"
+		remove_accepted_culture = american_german
+		remove_accepted_culture = akino_german
+		remove_accepted_culture = gek
+		remove_accepted_culture = veldlewer
+		set_global_flag = VKS_National_Unity
+		any_owned = {
+			limit = { is_core = VEL }
+			remove_core = VEL
+		}
+		any_owned = {
+			limit = { is_core = AKI }
+			remove_core = AKI
+		}
+		any_owned = {
+			limit = { is_core = GKS }
+			remove_core = GKS
+		}
+		any_owned = {
+			limit = { is_core = TEX }
+			remove_core = TEX
+		}
+	}	
+}
+
+##########################################
+##            DE GOLFOORLOG             ##
+##########################################
+
+### Roodevoort skirmish - Veldleuwer launches invasion of Freiland! ###
+
+country_event = {
+	id = 6900003
+	title = "KOL1.T"
+	desc = "KOL1.D"
+	picture = "veldleuwer_troops"
+	
+	trigger = {
+		tag = VEL
+		year = 1836
+		NOT = { has_global_flag = VKS_National_Unity }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = "KOL1.A"
+		war = {
+			target = TEX
+			attacker_goal = { casus_belli = gulf_war }
+			defender_goal = { casus_belli = gulf_war }
+			call_ally = no
+		}
+		141 = { change_controller = VEL }
+		TEX = { country_event = { id = 6900004 days = 0 } }
+	}	
+}
+
+country_event = {
+	id = 6900004
+	title = "KOL2.T"
+	desc = "KOL2.D"
+	picture = "veldleuwer_troops"
+
+    is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "KOL2.A"
+	}	
+}
+

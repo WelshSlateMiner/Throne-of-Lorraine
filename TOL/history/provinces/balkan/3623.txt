@@ -1,0 +1,8 @@
+owner = VOJ
+controller = VOJ
+add_core = VOJ
+add_core = GEP
+add_core = SER
+add_core = HUN
+trade_goods = grain
+life_rating = 35
