@@ -73,7 +73,7 @@ purchase_scilly = {
 		
 		effect = {
 			set_country_flag = welsh_intervention
-			badboy = 10
+			badboy = -1 # acquire_state war goal adds 2.2 x INFAMY_DEMAND_STATE (5) = 11 infamy on declaration; -1 here makes the total 10
 			prestige = 10
 			war = {
 				target = UOW
