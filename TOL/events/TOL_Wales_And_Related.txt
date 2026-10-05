@@ -162,7 +162,8 @@ country_event = {
 		war = no
 		owns = 300
 			WHA = {
-				owns = 3589
+				owns = 3480
+				owns = 298
 			}
 		NOT = { ENL = { has_country_flag = refused_welsh_deal } }
 		}
@@ -219,6 +220,7 @@ country_event = {
 			}
 		}
 		WHA = {
+			owns = 3480
 			owns = 298
 		}
 	}
