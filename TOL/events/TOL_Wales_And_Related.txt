@@ -288,8 +288,8 @@ province_event = {
 #accepted deal, but at war now anyway, remove modifier
 country_event = {
 	id = 59101
-	title = "EVTNAME959501"
-	desc = "EVTDESC959501"
+	title = "EVTNAME59101"
+	desc = "EVTDESC59101"
 	trigger = {
 		tag = ENL
 		has_country_modifier = Anglo_Welsh_Trade_Agreement
@@ -303,14 +303,14 @@ country_event = {
 	mean_time_to_happen = { days = 0.2 }
 	
 	option = {
-		name = "EVTOPTA959501"
+		name = "EVTOPTA59101"
 		set_country_flag = refused_welsh_deal
 		remove_country_modifier = Anglo_Welsh_Trade_Agreement
 		prestige = -5
 		}
 		
 	option = { 
-		name = "EVTOPTB9117"
+		name = "EVTOPTB59101"
 		prestige = 10
 		create_alliance = WHA
 		treasury = 20000
@@ -324,8 +324,8 @@ country_event = {
 #bridge to ynys mon
 province_event = {
 	id = 592102
-	title = "EVTNAME959503"
-	desc = "EVTDESC959503"
+	title = "EVTNAME592102"
+	desc = "EVTDESC592102"
 	trigger = {
 		owner = { tag = WHA }
 		province_id = 3586
@@ -337,7 +337,7 @@ province_event = {
 	mean_time_to_happen = { days = 0.3 }
 	
 	option = {
-		name = "EVTOPTA959503"
+		name = "EVTOPTA592102"
 		owner = { prestige = 2 }
 		3586 = {
 			infrastructure = 1
@@ -349,8 +349,8 @@ province_event = {
 #Trevithick passes away
 country_event = {
 	id = 593103
-	title = "EVTNAME959504"
-	desc = "EVTDESC959504"
+	title = "EVTNAME593103"
+	desc = "EVTDESC593103"
 	trigger = {
 		tag = WHA
 		year = 1840
@@ -367,7 +367,7 @@ country_event = {
 	mean_time_to_happen = { days = 0.3 }
 	
 	option = {
-		name = "EVTOPTA959504"
+		name = "EVTOPTA593103"
 		prestige = 1
 		set_global_flag = RIP_Trevithick
 	}
