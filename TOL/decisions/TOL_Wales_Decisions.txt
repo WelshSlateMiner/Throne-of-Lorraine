@@ -60,6 +60,9 @@ purchase_scilly = {
 			war = no
 			is_disarmed = no
 			owns = 3480
+			total_amount_of_divisions = 10
+			NOT = { has_country_modifier = in_bankrupcy }
+			NOT = { has_country_modifier = generalised_debt_default }
 			UOW = {
 				war = yes
 			}
@@ -67,22 +70,28 @@ purchase_scilly = {
 				war = yes
 			}
 		}
-			
+		
 		effect = {
 			set_country_flag = welsh_intervention
-			WHA = { war = { target = UOW
-				attacker_goal = { casus_belli = acquire_state state_province_id = 3588 }
-				defender_goal = { casus_belli = make_puppet }
-				call_ally = no
-					}
-				military_access = ENL
-				relation = { 
-					who = ENL
-						value = 50
+			badboy = 10
+			prestige = 10
+			war = {
+				target = UOW
+				attacker_goal = {
+					casus_belli = acquire_state
+					state_province_id = 3588
 				}
+				defender_goal = {
+					casus_belli = make_puppet
+				}
+				call_ally = no
 			}
-			badboy = -3
+			military_access = ENL
 			ENL = { military_access = WHA }
+			relation = {
+				who = ENL
+				value = 50
+			}
 		}
 	}
 	
